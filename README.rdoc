@@ -2,11 +2,10 @@
 
 == Introduction
 
-Sometimes you inherit a non Rails or non Rack based web app such as PHP, Perl, Java / JEE, etc. I like using cucumber for functional testing so I put together this project structure to use as a starting point for testing non Ruby web based applications.
+This is my implemenation of the standalone-cucumber solution provided by:
+https://github.com/thuss/standalone-cucumber
 
-I've included a simple search.feature examples that uses Google. To switch to use your own development or staging server adjust the URL in features/support/env.rb. I have this example project setup to use Capybara with Webdriver (Selenium) but you can easily switch this to use Culerity or Webrat by editing features/support/env.rb.
-
-Pull requests with updates/enhancements/bug fixes are always welcome!
+*Note: I had issues running with Firefox, so updated so Selenium will use Chrome.*
 
 == Project Layout
 
@@ -38,9 +37,3 @@ Pull requests with updates/enhancements/bug fixes are always welcome!
 
 * http://cukes.info (for general cucumber information)
 * http://github.com/jnicklas/capybara (for actions such as click_link, click_button, etc...)
-
-== Contributors
-
-* {Cucumber mailing list for the project structure}[http://groups.google.com/group/cukes/browse_thread/thread/297163800eaf2968?pli=1]
-* {Todd Huss}[http://gabrito.com]
-
